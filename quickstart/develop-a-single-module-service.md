@@ -61,7 +61,7 @@ To make sure that module compiled correctly, let's retrieve some internal info f
 ```shell
 # obtain some info from a compiled module
 # (build.sh copies compiled Wasm binary to the artifacts folder)
-~/greeting $ marine info -i artifacts/greeting.wasm
+~/greeting $ marine info artifacts/greeting.wasm
     it version:  0.23.1
     sdk version: 0.6.0
     authors:     <user-name>

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [🧑🏫 Basic concepts](basic-concepts.md)
+* [🧑🏫 🧑🏫 Basic concepts](basic-concepts.md)
 * [🚴 Quickstart](quickstart/README.md)
   * [Setting up the development environment](quickstart/setting-up-the-development-environment.md)
   * [Develop a single module service](quickstart/develop-a-single-module-service.md)

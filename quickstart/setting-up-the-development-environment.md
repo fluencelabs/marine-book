@@ -18,8 +18,8 @@ To configure your current shell run source $HOME/.cargo/env
 ~ $ source $HOME/.cargo/env
 <no output>
 
-# install the nightly toolchain
-~ $ rustup install nightly
+# install the nightly toolchain (the x86_64 suffix is needed for compatibility with M1) 
+~ $ rustup install nightly-x86_64
 ```
 
 To be able to compile Rust in Wasm, install the `wasm32-wasi` compilation target:
@@ -44,7 +44,7 @@ Then, install `marine` and `mrepl`:
 
 ```shell
 # install marine
-~ $ cargo install marine
+~ $ cargo +nightly install marine
 
 # install mrepl, it requires nightly toolchain
 ~ $ cargo +nightly install mrepl

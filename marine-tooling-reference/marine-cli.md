@@ -113,7 +113,7 @@ OPTIONS:
 The `marine_manifest` macro embeds some info into compiled Wasm module that could be obtained with this command:
 
 ```shell
-/ $ marine info -i artifacts/greeting.wasm
+/ $ marine info artifacts/greeting.wasm
 it version:  0.23.0
 sdk version: 0.6.0
 authors:     Fluence Labs

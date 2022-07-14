@@ -128,7 +128,7 @@ build time:  2022-04-12 18:16:34.487366668 +00:00 UTC
 Interface-types are embeded into a custom section of a Wasm binary while building with `marine build`
 
 ```shell
-/ $ marine it -i artifacts/greeting.wasm
+/ $ marine it artifacts/greeting.wasm
 (@interface it_version "0.23.0")
 
 ;; Types
@@ -182,7 +182,7 @@ SUBCOMMANDS:
     
 / $ marine set version -i artifacts/greeting.wasm -v 0.7.0
 the version was successfully embedded
-/ $ marine info -i artifacts/greeting.wasm
+/ $ marine info artifacts/greeting.wasm
 it version:  0.23.0
 sdk version: 0.7.0
 authors:     Fluence Labs

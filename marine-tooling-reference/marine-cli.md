@@ -16,7 +16,7 @@ The CLI functionality is available with:
 
 ```bash
 $ marine --help
-Fluence Marine command line tool 0.10.1
+Fluence Marine command line tool 0.11.0
 Fluence Labs
 
 USAGE:

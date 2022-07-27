@@ -18,7 +18,7 @@ Usage: mrepl [CONFIG_FILE_PATH]
 
 Fluence Application service REPL
 
-0.17.0
+0.16.0
 
 Parameters:
   [CONFIG_FILE_PATH]    Path to a service config
@@ -33,9 +33,9 @@ To run REPL just call a command in a terminal:
 
 ```shell
 ~ $ mrepl
-Welcome to the Marine REPL (version 0.17.0)
+Welcome to the Marine REPL (version 0.16.0)
 Minimal supported versions
-  sdk: 0.7.0
+  sdk: 0.6.0
   interface-types: 0.20.0
 
 app service was created with service id = 732f4136-7542-4101-851e-511cc83e6ac0

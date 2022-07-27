@@ -8,7 +8,7 @@ To enable logging please specify the logger feature of the Marine SDK in `Config
 
 ```toml
 [dependencies]
-marine-rs-sdk = { version = "0.6.15", features = ["debug"] }
+marine-rs-sdk = { version = "0.7.0", features = ["debug"] }
 ```
 
 ### Using debug API
@@ -18,9 +18,9 @@ Normally, this feature should not be used by a backend developer. Below you can 
 ```shell
 # running the greeting service compiled with debug feature
 ~ $ RUST_LOG="info" mrepl Config.toml
-Welcome to the Marine REPL (version 0.16.0)
+Welcome to the Marine REPL (version 0.17.0)
 Minimal supported versions
-  sdk: 0.6.0
+  sdk: 0.7.0
   interface-types: 0.20.0
 
 app service was created with service id = 0ba05b05-4e92-48bf-ac30-2b8b59efe189

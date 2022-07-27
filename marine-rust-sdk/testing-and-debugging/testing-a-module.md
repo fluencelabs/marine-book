@@ -4,7 +4,7 @@ To use the `[marine-test]` macro add `marine-rs-sdk-test` crate to the `[dev-dep
 
 ```toml
 [dev-dependencies]
-marine-rs-sdk-test = "0.5.0"
+marine-rs-sdk-test = "0.7.0"
 ```
 
 Let's have a look at an implementation example:

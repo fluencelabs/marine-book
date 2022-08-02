@@ -11,9 +11,11 @@ modules_dir = "artifacts/"
 
 This config contains the following information:
 
-* **modules\_dir** - path to the directory with all modules, all subsequent paths will be considered relative to this path
+* **modules\_dir**  - default directory for searching modules
 * **\[\[module]]** - a list of modules that the service consists of
 * **name** - the name of the Wasm file in the modules\_dir directory
+
+Tools will interpret all relative paths in the config as relative to the config file location. Alsolute paths will be used unchanged.
 
 ### Config structure
 
@@ -28,6 +30,8 @@ modules_dir = "artifacts/"
     max_heap_size = "1 KiB"
     logger_enabled = true
     logging_mask = 0
+    file_name = "effector-patched.wasm"
+    load_from = "downloaded-artifacts/"
 
     [module.wasi]
     preopened_files = ["./dir"]
@@ -89,7 +93,15 @@ true, if it allows the corresponding Wasm module to use the Marine SDK logger.
 
 manages the logging targets, described in detail [here](../marine-rust-sdk/developing/logging.md#using-target-map).
 
-#### **module.wasi**&#x20;
+#### file\_name
+
+overrides the file name for loading, which by default is `$name.wasm`
+
+#### load\_from
+
+overrides `modules_dir` for this module. Path can contain file name, in this case it will be incompatible with `file_name` field.
+
+**module.wasi**&#x20;
 
 a list of files available for reading/writing by the corresponding _effector_ module.
 

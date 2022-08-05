@@ -26,7 +26,7 @@ To be able to compile Rust in Wasm, install the `wasm32-wasi` compilation target
 
 ```shell
 # install wasm32-wasi target for WebAssembly
-~ $ rustup target add wasm32-wasi
+~ $ rustup +nightly-x86_64 target add wasm32-wasi
 info: downloading component 'rust-std' for 'wasm32-wasi'
 info: installing component 'rust-std' for 'wasm32-wasi'
 ```
@@ -44,8 +44,8 @@ Then, install `marine` and `mrepl`:
 
 ```shell
 # install marine
-~ $ cargo +nightly install marine
+~ $ cargo +nightly-x86_64 install marine
 
 # install mrepl, it requires nightly toolchain
-~ $ cargo +nightly install mrepl
+~ $ cargo +nightly-x86_64 install mrepl
 ```
